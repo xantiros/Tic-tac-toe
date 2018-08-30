@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tic_tac_toe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tic tac toe" Height="400.711" Width="549.239">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="83*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="Img1" HorizontalAlignment="Left" Height="100" Margin="7,27,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img1_MouseUp"/>
+        <Image Name="Img2" HorizontalAlignment="Left" Height="100" Margin="107,27,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img2_MouseUp" />
+        <Image Name="Img3" HorizontalAlignment="Left" Height="100" Margin="207,27,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img3_MouseUp" />
+        <Image Name="Img4" HorizontalAlignment="Left" Height="100" Margin="7,127,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img4_MouseUp" />
+        <Image Name="Img5" HorizontalAlignment="Left" Height="100" Margin="107,127,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img5_MouseUp" />
+        <Image Name="Img6" HorizontalAlignment="Left" Height="100" Margin="207,127,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img6_MouseUp" />
+        <Image Name="Img7" HorizontalAlignment="Left" Height="100" Margin="7,227,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img7_MouseUp" />
+        <Image Name="Img8" HorizontalAlignment="Left" Height="100" Margin="107,227,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img8_MouseUp" />
+        <Image Name="Img9" HorizontalAlignment="Left" Height="100" Margin="207,227,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Cursor="Hand" MouseUp="Img9_MouseUp" />
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="352,54,0,0" VerticalAlignment="Top">
+            <Label Content="Player: "/>
+        </Label>
+        <Image Name="Img_who" Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="415,60,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.874,0.481" Source="Resources/xsmall.bmp"/>
+        <Button Content="New game" Grid.Column="1" HorizontalAlignment="Left" Margin="370,227,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
     </Grid>
 </Window>
